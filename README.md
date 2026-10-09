@@ -1,221 +1,348 @@
-<div align="center">
+# ✨ LumiLife OS
+### Your Life, Beautifully Organized. 🌷
 
-<img src="public/logo.svg" alt="Life OS" width="112" height="112" />
+<p align="center">
+  <img src="public/logo.svg" alt="LumiLife OS Logo" width="100" />
+</p>
 
-# Life OS
+<p align="center">
+  <strong>One dashboard. Every goal. A more organized you.</strong>
+</p>
 
-**Your Personal Life Operating System**
+<p align="center">
+  A modern, all-in-one personal productivity platform designed to bring your tasks, habits, notes, goals, finances, learning, and daily reflections together in one beautiful digital space.
+</p>
 
-[![CI](https://github.com/lunanoir21/Life-os-project/actions/workflows/ci.yml/badge.svg)](https://github.com/lunanoir21/Life-os-project/actions/workflows/ci.yml)
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![Rust](https://img.shields.io/badge/Rust-axum-orange?style=flat-square&logo=rust)](https://www.rust-lang.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Rust-Backend-orange?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License" />
+</p>
 
-A beautiful, local-first personal life management system — tasks, habits, journal, finance, goals, and more in one place.
-
-[Live Demo](https://lunanoir21.github.io/Life-os-project/) · [Documentation](https://lunanoir21.github.io/Life-os-project/documentation.html) · [Quick Start](#getting-started) · [Docker](#docker)
-
-</div>
-
----
-
-## Screenshots
-
-| Dashboard | Tasks | Habits |
-|:---------:|:-----:|:------:|
-| ![Dashboard](docs/screenshots/dashboard.jpg) | ![Tasks](docs/screenshots/tasks.jpg) | ![Habits](docs/screenshots/habits.jpg) |
-
-| Journal | Finance |
-|:-------:|:-------:|
-| ![Journal](docs/screenshots/journal.jpg) | ![Finance](docs/screenshots/finance.jpg) |
+<p align="center">
+  <em>Plan intentionally. Build better habits. Make every day count. ♡</em>
+</p>
 
 ---
 
-## Features
+## 🌸 About the Project
 
-**11 modules** — Dashboard, Tasks, Notes, Habits, Journal, Finance, Goals, Learning, Calendar, Time Tracker, Settings
+**LumiLife OS** is a personal life-management dashboard built to make everyday organization feel simpler and more intentional.
 
-- Command palette (`⌘K`), global search, focus mode (`F11`)
-- Drag-and-drop Kanban, recurring tasks, bulk operations
-- Habit streaks with gap forgiveness, counter habits
-- Finance budget alerts, CSV import, analytics charts
-- Dashboard widget reordering (dnd-kit), real activity data
-- Journal templates (Morning / Daily / Weekly)
-- Pomodoro timer, time tracking with analytics
-- Dark / Light / System theme + 10 accent colors + 8 variants
-- Internationalization: EN, TR, ES, DE, FR
-- Data export / import / reset
+Instead of switching between multiple productivity tools, users can organize different areas of their lives in one central workspace — from planning the day and tracking habits to managing personal finances and recording meaningful moments.
+
+Whether you're a student, developer, freelancer, creative, or lifelong learner, LumiLife OS aims to help you turn everyday plans into consistent progress.
+
+### ✨ The vision
+
+- 🌷 **Clarity:** Keep important information organized in one place.
+- 🎯 **Consistency:** Track habits, goals, and personal progress.
+- 🧠 **Focus:** Make planning and time management easier.
+- 📔 **Reflection:** Capture thoughts, ideas, and daily experiences.
+- 💜 **Personalization:** Create a workspace that feels right for you.
+
+## 🖥️ Explore the Dashboard
+
+### 📊 Your Personal Command Center
+
+Get an overview of your activities and organize your priorities from one dashboard.
+
+![LumiLife OS Dashboard](docs/screenshots/dashboard.jpg)
+
+### ✅ Task Management
+
+Organize tasks, manage priorities, and use a Kanban-style workflow to keep projects moving.
+
+![Task Management](docs/screenshots/tasks.jpg)
+
+### 🌱 Habit Tracking
+
+Build routines, monitor streaks, and stay consistent with the habits that matter to you.
+
+![Habit Tracker](docs/screenshots/habits.jpg)
+
+### 📔 Digital Journal
+
+Create space for daily reflections, morning intentions, and weekly reviews.
+
+![Digital Journal](docs/screenshots/journal.jpg)
+
+### 💰 Personal Finance
+
+Track budgets, review financial activity, and explore your spending through analytics.
+
+![Personal Finance](docs/screenshots/finance.jpg)
 
 ---
 
-## Tech Stack
+## 💎 Features
 
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | Next.js 16 (App Router), React 19, TypeScript 5 |
-| **Styling** | Tailwind CSS 4, shadcn/ui |
-| **Backend** | Rust (axum 0.8 + sqlx 0.8) — replaces all Next.js API routes |
-| **Database** | SQLite via Prisma (migrations) + sqlx (runtime queries) |
-| **State** | Zustand (UI state) + TanStack Query (server state) |
-| **Animations** | Framer Motion |
-| **Charts** | Recharts |
-| **Runtime** | Bun |
-| **Container** | Docker — multi-stage build, standalone output |
+### 🗂️ All-in-One Life Management
 
-### Architecture
+LumiLife OS brings together **11 core modules**:
 
-Two processes run simultaneously:
+| Module | Purpose |
+|---|---|
+| 📊 Dashboard | View your productivity overview |
+| ✅ Tasks | Organize to-dos, priorities, and workflows |
+| 📝 Notes | Capture and organize information |
+| 🌱 Habits | Track routines and build consistency |
+| 📔 Journal | Record reflections and daily entries |
+| 💰 Finance | Manage budgets and financial activity |
+| 🎯 Goals | Plan objectives and track progress |
+| 📚 Learning | Organize learning activities |
+| 📅 Calendar | Keep track of your schedule |
+| ⏱️ Time Tracker | Understand how you spend your time |
+| ⚙️ Settings | Customize your workspace preferences |
 
+### 🚀 Productivity Tools
+
+- Drag-and-drop Kanban task management
+- Recurring tasks and bulk operations
+- Global search and command palette
+- Focus mode for distraction-reduced work
+- Pomodoro timer and time tracking
+- Reorderable dashboard widgets
+- Journal templates for morning, daily, and weekly reflections
+- Finance analytics and budget alerts
+- CSV finance import
+- Data export and import options
+
+### 🎨 Personalization
+
+- Dark, light, and system appearance modes
+- 10 accent color options
+- 8 theme variants
+- Multiple interface preferences
+- Internationalization support for English, Turkish, Spanish, German, and French
+
+### 🔐 Data & Architecture
+
+- Local-first personal productivity approach
+- SQLite database support
+- Rust-powered backend API
+- Data export, import, and reset options
+- Docker-based deployment support
+
+*Always review the current code, configuration, and deployment setup before relying on the application for sensitive personal or financial information.*
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Role |
+|---|---|
+| Next.js 16 | Frontend framework |
+| React 19 | Component-based UI |
+| TypeScript 5 | Type-safe development |
+| Tailwind CSS 4 | Styling |
+| shadcn/ui & Radix UI | UI components |
+| Rust & Axum | Backend API |
+| SQLite | Database |
+| Prisma & SQLx | Database tooling and queries |
+| Zustand | UI state management |
+| TanStack Query | Server-state management |
+| Framer Motion | UI animations |
+| Recharts | Charts and analytics |
+| Docker | Containerized deployment |
+| Bun | JavaScript runtime and package management |
+
+## 🏗️ Architecture
+
+The application separates its frontend and backend responsibilities.
+
+```text
+             ┌───────────────────────┐
+             │       User            │
+             └──────────┬────────────┘
+                        │
+                        ▼
+             ┌───────────────────────┐
+             │   Next.js Frontend    │
+             │    React + TypeScript │
+             └──────────┬────────────┘
+                        │
+                   /api/* proxy
+                        │
+                        ▼
+             ┌───────────────────────┐
+             │    Rust + Axum API    │
+             └──────────┬────────────┘
+                        │
+                        ▼
+             ┌───────────────────────┐
+             │   SQLite Database     │
+             └───────────────────────┘
 ```
-Browser → Next.js :3000 → /api/* rewrites → Rust :8080 → SQLite
-```
 
-Next.js serves the UI and proxies every `/api/*` request to the Rust backend. There are no Next.js API route handlers.
+This separation keeps the interface and backend API independently organized.
 
 ---
 
-## Getting Started
+## ⚡ Getting Started
 
-### Development
+### Prerequisites
 
-**Prerequisites:** Bun, Rust (stable toolchain)
+Install the following tools before starting:
+
+- [Bun](https://bun.sh/)
+- [Rust](https://www.rust-lang.org/tools/install)
+- [Git](https://git-scm.com/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) — optional, for containerized setup
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/lunanoir21/Life-os-project.git
-cd Life-os-project
+git clone https://github.com/Aleezy-code/LumiLife-OS.git
+cd LumiLife-OS
+```
 
-# Install frontend dependencies
+### 2. Install dependencies
+
+```bash
 bun install
+```
 
-# Set up the database
+### 3. Prepare the database
+
+```bash
 bun run db:push
 bun run db:generate
+```
 
-# Seed with demo data (optional)
+Optional: populate the database with demo data if the seed setup is configured.
+
+```bash
 bun run db:seed
 ```
 
-Then start both processes in separate terminals:
+### 4. Start the Rust backend
+
+Open a terminal in the project directory:
 
 ```bash
-# Terminal 1 — Rust backend (port 8080)
 bun run backend:dev
+```
 
-# Terminal 2 — Next.js frontend (port 3000)
+### 5. Start the frontend
+
+Open a second terminal in the same project directory:
+
+```bash
 bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+### 6. Open the application
 
-### Docker — single command, every platform
+Visit:
+
+**http://localhost:3000**
+
+> Keep both the frontend and backend processes running during local development.
+
+### 🐳 Alternative: Docker
+
+If Docker Desktop is installed and running, the project also includes Docker scripts.
 
 ```bash
-# One command does it all: checks Docker, builds, starts, waits healthy, tails logs.
-# Works on Linux, macOS, Windows (PowerShell / CMD) and WSL.
 bun run docker:start
-
-# If you don't have Node/Bun yet, use the no-deps shell wrappers:
-./start.sh          # Linux / macOS / WSL
-./start.ps1         # Windows PowerShell
-
-# Stop / reset
-bun run docker:stop          # stop, keep the data volume
-bun run docker:reset         # stop AND delete the data volume (DATA LOSS)
 ```
 
-The app will be available at [http://localhost:3000](http://localhost:3000).
-SQLite data is persisted to the `life-os-data` named volume between restarts.
+Open **http://localhost:3000** after the application starts.
 
-### Environment Variables
-
-| Variable | Default | Purpose |
-|----------|---------|---------|
-| `DATABASE_URL` | `sqlite:../prisma/dev.db` | SQLite path for Rust backend |
-| `BACKEND_URL` | `http://localhost:8080` | Used by Next.js rewrites |
-| `PORT` | `8080` | Rust backend listen port |
-| `API_KEY` | _(unset)_ | If set, all `/api/*` requests must carry `Authorization: Bearer <key>` |
-| `ALLOWED_ORIGIN` | _(unset)_ | If set, CORS is restricted to this origin |
+Refer to the repository's Docker configuration and startup scripts for platform-specific requirements.
 
 ---
 
-## Scripts
+## 📁 Project Structure
 
-| Script | Description |
-|--------|-------------|
-| `bun run dev` | Next.js dev server on :3000 |
-| `bun run build` | Production build (standalone output) |
-| `bun run typecheck` | TypeScript type check |
-| `bun run lint` | ESLint |
-| `bun run test` | Vitest (jsdom) |
-| `bun run backend:dev` | Rust backend (cargo run) |
-| `bun run backend:build` | Rust release build |
-| `bun run db:push` | Apply schema to dev.db |
-| `bun run db:generate` | Regenerate Prisma client |
-| `bun run db:seed` | Populate dev.db with demo data |
-| `bun run docker:start` | **One-command launch** (cross-platform: detect → build → up → wait → tail logs) |
-| `bun run docker:stop` | Stop containers, keep the data volume |
-| `bun run docker:reset` | Stop AND delete the data volume (destructive) |
-| `bun run docker:up` | Raw `docker compose up -d --build` |
-| `bun run docker:logs` | Raw `docker compose logs -f` |
-| `bun run docker:down` | Raw `docker compose down` |
-| `./start.sh` / `./start.ps1` | Shell wrappers (no Node/Bun required) |
-
----
-
-## Project Structure
-
-```
-life-os/
-├── backend/                   # Rust backend (axum + sqlx)
-│   ├── src/
-│   │   ├── main.rs            # Entry point, env config
-│   │   ├── lib.rs             # Router + AppState
-│   │   ├── db.rs              # SQLite pool setup
-│   │   ├── error.rs           # AppError → HTTP response
-│   │   └── *.rs               # One file per module (tasks, habits, …)
-│   └── tests/                 # Integration tests (tempfile SQLite)
-├── prisma/
-│   ├── schema.prisma          # Database schema (Prisma manages migrations)
-│   ├── migrations/            # SQL migration files
-│   └── seed.ts                # Demo data seeder
-├── src/
-│   ├── app/                   # Next.js App Router (layout + page only)
-│   ├── components/lifeos/     # One subdirectory per module
-│   ├── lib/api/               # TanStack Query hooks + fetch client
-│   ├── lib/i18n/              # Translations (EN, TR, ES, DE, FR)
-│   └── stores/                # Zustand UI state stores
+```text
+LumiLife-OS/
+├── backend/
+│   └── src/                 # Rust backend modules
 ├── docs/
-│   ├── index.html             # GitHub Pages landing page
-│   └── screenshots/           # App screenshots
-├── Dockerfile                 # Multi-stage: Rust → Next.js → runtime
+│   └── screenshots/         # Dashboard screenshots
+├── prisma/                  # Database schema and seed setup
+├── public/
+│   └── logo.svg             # Application logo
+├── src/
+│   └── app/                 # Frontend application
+├── .github/
+│   └── workflows/           # CI workflow configuration
+├── Dockerfile
 ├── docker-compose.yml
-└── docker-entrypoint.sh       # Migrate → wait for backend → start frontend
+├── package.json
+├── README.md
+└── LICENSE
 ```
 
----
-
-## Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `⌘K` / `Ctrl+K` | Command Palette |
-| `⌘F` / `Ctrl+F` | Global Search |
-| `F11` | Focus Mode |
-| `⌘/` / `Ctrl+/` | Toggle Theme |
-| `?` | Keyboard Shortcuts Help |
-| `Escape` | Close dialogs |
+*Directory names may vary slightly as the project evolves.*
 
 ---
 
-## License
+## 🧪 Development & Quality Checks
 
-MIT — see [LICENSE](LICENSE).
+Useful commands included in the project:
+
+```bash
+bun run typecheck
+bun run lint
+bun run test
+bun run build
+```
+
+Build and test results depend on your installed dependencies and local environment.
+
+## 🌷 Who Is LumiLife OS For?
+
+- 🎓 Students planning their studies and routines
+- 💻 Developers balancing projects and personal goals
+- 🎨 Creatives organizing ideas and inspiration
+- 💼 Freelancers managing work and time
+- 🌱 Anyone who wants to build better daily habits
+
+## 🗺️ Future Possibilities
+
+Ideas for future development include:
+
+- More dashboard themes and personalization options
+- Enhanced analytics and progress visualizations
+- Additional productivity integrations
+- Improved mobile and responsive experiences
+- More flexible goal planning and review workflows
+
+These are potential improvements, not promises that the features are already implemented.
+
+## 🤝 Contributing
+
+Contributions, bug reports, and ideas are welcome.
+
+1. Fork this repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Test your changes locally.
+5. Open a pull request describing your improvements.
+
+## 🔒 Security
+
+Please do not commit API keys, passwords, private credentials, or personal database files.
+
+Use environment variables for secrets and review `.env.example` before configuring your environment.
+
+## 📄 License
+
+This project includes an MIT license. See the [LICENSE](LICENSE) file for the full terms.
+
+## 💜 A Little Reminder
+
+> You don't need to have your whole life figured out. You just need a place to begin.
+
+**LumiLife OS — organize your world, one day at a time.** 🌙✨
 
 ---
 
-<div align="center">
-
-[Back to top](#life-os)
-
-</div>
+<p align="center">
+  Made with 💜 and a love for thoughtful productivity.
+</p>
